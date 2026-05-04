@@ -1,0 +1,16 @@
+{
+  "base_seed": 1,
+  "cplex_reference_csv": "/Users/llee/Projects/blp-qubo/experiments/manifests/shared_eval_seed_manifest_cplex_optima.csv",
+  "experiment": "compare_up_projection",
+  "instance_manifest": "/Users/llee/Projects/blp-qubo/experiments/manifests/shared_eval_seed_manifest.csv",
+  "mode": "logical",
+  "num_instances": 20,
+  "projected_up_summary_path": "/Users/llee/Projects/blp-qubo/experiments/tunings/compare_unb_pen_projected/projected_penalty_tuning_summary.csv",
+  "projected_up_tuning_dir": "/Users/llee/Projects/blp-qubo/experiments/tunings/compare_unb_pen_projected",
+  "projection_target": "raw_tuned_unbalanced_row",
+  "sqa_schedule_id": "standard_t50",
+  "sqa_schedule_kind": "standard",
+  "sqa_schedule_total_time": 50.0,
+  "tuning_dir": "/Users/llee/Projects/blp-qubo/experiments/tunings",
+  "unbalanced_summary_path": "/Users/llee/Projects/blp-qubo/experiments/tunings/unbalanced_penalty_tuning_summary.csv"
+}

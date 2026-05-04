@@ -1,0 +1,25 @@
+{
+  "aggregate_groups": 42,
+  "analysed_instances": 51,
+  "analysed_runs": 51,
+  "benchmark_inputs": {
+    "mdkp": "data/mdkp_instances",
+    "mis": "data/mis_instances"
+  },
+  "discovered_run_catalog": false,
+  "generated_at_utc": "2026-05-04T11:52:09.089107+00:00",
+  "known_optima_csv": "/Users/llee/Projects/blp-qubo/data/classical_baselines/cplex_optima.csv",
+  "loaded_known_optima": 17,
+  "outputs": {
+    "aggregate_summary_csv": "/Users/llee/Projects/blp-qubo/experiments/results/dwave_bench/20260426T091720605886Z/Advantage_system4.1_graph_id_01d07086e1/aggregate_summary.csv",
+    "analysis_skipped_csv": "/Users/llee/Projects/blp-qubo/experiments/results/dwave_bench/20260426T091720605886Z/Advantage_system4.1_graph_id_01d07086e1/analysis_skipped.csv",
+    "instance_summary_csv": "/Users/llee/Projects/blp-qubo/experiments/results/dwave_bench/20260426T091720605886Z/Advantage_system4.1_graph_id_01d07086e1/instance_summary.csv",
+    "run_metrics_catalog_csv": "/Users/llee/Projects/blp-qubo/experiments/results/dwave_bench/20260426T091720605886Z/Advantage_system4.1_graph_id_01d07086e1/run_metrics_catalog.csv"
+  },
+  "run_catalog_csv": "/Users/llee/Projects/blp-qubo/experiments/results/dwave_bench/20260426T091720605886Z/Advantage_system4.1_graph_id_01d07086e1/run_catalog.csv",
+  "run_manifest_json": "/Users/llee/Projects/blp-qubo/experiments/results/dwave_bench/20260426T091720605886Z/Advantage_system4.1_graph_id_01d07086e1/run_manifest.json",
+  "session_dir": "/Users/llee/Projects/blp-qubo/experiments/results/dwave_bench/20260426T091720605886Z/Advantage_system4.1_graph_id_01d07086e1",
+  "session_dir_repo_relative": "experiments/results/dwave_bench/20260426T091720605886Z/Advantage_system4.1_graph_id_01d07086e1",
+  "skipped_rows": 0,
+  "synthetic_run_manifest": false
+}

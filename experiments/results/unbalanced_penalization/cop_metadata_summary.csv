@@ -1,0 +1,2 @@
+samplers,sqa_reads,sqa_mode,sqa_beta_scales,sqa_num_sweeps,sqa_schedule_catalog,sqa_selected_schedules,sqa_anneal_time
+sqa,1000,fixed_qpu_default,1,1000,standard_t50,mdkp:standard_t50;mis:standard_t50,50.0

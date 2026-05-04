@@ -1,0 +1,23 @@
+{
+  "base_seed": 1,
+  "cplex_reference_csv": "/Users/llee/Projects/blp-qubo/experiments/manifests/shared_eval_seed_manifest_cplex_optima.csv",
+  "hardware_families": [
+    "chimera",
+    "pegasus",
+    "zephyr"
+  ],
+  "hardware_sizes": {
+    "chimera": 16,
+    "pegasus": 16,
+    "zephyr": 16
+  },
+  "instance_manifest": "/Users/llee/Projects/blp-qubo/experiments/manifests/shared_eval_seed_manifest.csv",
+  "num_instances": 20,
+  "projected_summary_path": "/Users/llee/Projects/blp-qubo/experiments/tunings/projected_penalty_tuning_summary.csv",
+  "sqa_chain_strength_fraction": 1.0,
+  "sqa_num_points": 1000,
+  "sqa_num_reads": 1000,
+  "sqa_num_sweeps_per_beta": 1,
+  "sqa_schedule_id": "standard_t50",
+  "unbalanced_summary_path": "/Users/llee/Projects/blp-qubo/experiments/tunings/unbalanced_penalty_tuning_summary.csv"
+}

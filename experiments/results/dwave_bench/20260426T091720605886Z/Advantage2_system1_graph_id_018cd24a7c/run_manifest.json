@@ -1,0 +1,173 @@
+{
+  "args": {
+    "dry_run": false,
+    "dwave_api_token_provided": true,
+    "output_dir": "/home/bannach/tmp/dwave/experiments/results/dwave_bench",
+    "progress_ui": "tui",
+    "test_run": false,
+    "token_env_var": "DWAVE_API_TOKEN",
+    "tuning_dir": "/home/bannach/tmp/dwave/experiments/tunings"
+  },
+  "benchmark_inputs": {
+    "mdkp": {
+      "directory": "/home/bannach/tmp/dwave/data/mdkp_instances",
+      "instance_names": [
+        "hp1",
+        "hp2",
+        "pb1",
+        "pb2",
+        "pb4",
+        "pb5",
+        "pet2",
+        "pet3",
+        "pet4",
+        "pet5",
+        "pet6",
+        "pet7"
+      ],
+      "instances_loaded": 12
+    },
+    "mis": {
+      "directory": "/home/bannach/tmp/dwave/data/mis_instances",
+      "instance_names": [
+        "1et.64",
+        "1tc.16",
+        "1tc.32",
+        "1tc.64",
+        "1tc.8"
+      ],
+      "instances_loaded": 5
+    }
+  },
+  "created_at_utc": "2026-04-26T12:53:27.351456+00:00",
+  "device": "Advantage2_system1;graph_id=018cd24a7c",
+  "device_name": "Advantage2_system1;graph_id=018cd24a7c",
+  "device_slug": "Advantage2_system1_graph_id_018cd24a7c",
+  "dry_run": false,
+  "hardware_family": "zephyr",
+  "internal_defaults": {
+    "annealing_time": 25.0,
+    "auto_scale": false,
+    "chain_strength": null,
+    "dry_run_hardware_family": "pegasus",
+    "dry_run_hardware_size": 16,
+    "dry_run_num_sweeps": null,
+    "dry_run_num_sweeps_per_beta": null,
+    "dry_run_sampler": "random",
+    "dry_run_sqa_beta_scale": null,
+    "dry_run_sqa_schedule_id": null,
+    "dry_run_sqa_schedule_json": null,
+    "families": [
+      "mdkp",
+      "mis"
+    ],
+    "live_qpu_topologies": [
+      "pegasus",
+      "zephyr"
+    ],
+    "methods": [
+      "projected_topology",
+      "projected_full",
+      "unbalanced"
+    ],
+    "num_reads": 2500,
+    "num_runs_per_instance": 1,
+    "projection_backend": "torch",
+    "projection_reg": 1e-08,
+    "resolved_methods": [
+      {
+        "requested_method": "projected_topology",
+        "resolved_method": "projected_zephyr"
+      },
+      {
+        "requested_method": "projected_full",
+        "resolved_method": "projected_full"
+      },
+      {
+        "requested_method": "unbalanced",
+        "resolved_method": "unbalanced"
+      }
+    ],
+    "sample_cap_log2": 15,
+    "seed": 1
+  },
+  "qpu_timing_totals": {
+    "experiment_live_runs_missing_qpu_timing": 0,
+    "experiment_live_runs_with_qpu_timing": 102,
+    "experiment_qpu_access_time_seconds": 39.569873960000024,
+    "experiment_qpu_access_time_us": 39569873.96000002,
+    "target_live_runs_missing_qpu_timing": 0,
+    "target_live_runs_with_qpu_timing": 51,
+    "target_qpu_access_time_seconds": 19.403499999999998,
+    "target_qpu_access_time_us": 19403499.999999996
+  },
+  "requested_topology": "zephyr",
+  "resolved_token_env_var": null,
+  "runtime_dependencies": {
+    "directories": [
+      "data/tsp_instances_small",
+      "data/mis_instances",
+      "data/mdkp_instances"
+    ],
+    "env_vars": [
+      "DWAVE_API_TOKEN",
+      "DWAVE_API_KEY",
+      "DWAVE_API_ENDPOINT (optional)"
+    ],
+    "files": [
+      "experiments/tunings/projected_penalty_tuning_summary.csv",
+      "experiments/tunings/unbalanced_penalty_tuning_summary.csv"
+    ],
+    "pip_packages": [
+      "numpy",
+      "networkx",
+      "dimod",
+      "minorminer",
+      "dwave-system",
+      "dwave-networkx"
+    ],
+    "python_modules": [
+      "experiments/utils/data_loaders.py",
+      "experiments/utils/benchmark_data.py",
+      "experiments/utils/driver_common.py",
+      "experiments/utils/embedding.py",
+      "experiments/utils/projected_method_selection.py",
+      "experiments/utils/projected_pipeline.py",
+      "experiments/utils/projected_qubo.py",
+      "experiments/utils/projection_measure.py",
+      "experiments/utils/qa_simulator.py",
+      "experiments/utils/tuning_models.py",
+      "experiments/utils/tuning_summary.py",
+      "experiments/utils/tuning_support.py",
+      "experiments/utils/unb_pen.py",
+      "fourier_projection/blp.py",
+      "fourier_projection/greedy_mapping.py",
+      "fourier_projection/penalties.py",
+      "fourier_projection/projection.py",
+      "fourier_projection/topology.py"
+    ]
+  },
+  "session_id": "20260426T091720605886Z",
+  "solver": {
+    "avg_load": null,
+    "category": "qpu",
+    "chip_id": "Advantage2_system1",
+    "location": null,
+    "num_couplers": 41531,
+    "num_qubits": 4578,
+    "requested_device": null,
+    "requested_topology": "zephyr",
+    "solver_id": "Advantage2_system1;graph_id=018cd24a7c",
+    "topology_shape": [
+      12,
+      4
+    ],
+    "topology_type": "zephyr"
+  },
+  "test_run": false,
+  "token_source": "cli_arg",
+  "tuning_summaries": {
+    "projected": "/home/bannach/tmp/dwave/experiments/tunings/projected_penalty_tuning_summary.csv",
+    "unbalanced": "/home/bannach/tmp/dwave/experiments/tunings/unbalanced_penalty_tuning_summary.csv"
+  }
+}

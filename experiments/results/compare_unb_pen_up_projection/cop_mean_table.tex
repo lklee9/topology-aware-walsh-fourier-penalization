@@ -1,0 +1,32 @@
+\begin{table}[t]
+  \caption{Mean coefficient of performance (CoP) and feasibility (Fea.) for the unbalanced baseline and projected-UP variants in logical and embedding evaluations. MIS-Hub instances are omitted.}
+  \label{tab:compare-unb-pen-cop-mean}
+  \centering
+  \resizebox{\columnwidth}{!}{%
+  \begin{tabular}{@{}lllrrrrrrrrrr@{}}
+    \toprule
+    & & & \multicolumn{4}{c}{Logical} & \multicolumn{6}{c}{Embedding} \\
+    \cmidrule(lr){4-7} \cmidrule(lr){8-13}
+    Family & $n$ & Metric & Unb. & Chim. & Peg. & Zeph. & Chim.-Unb. & Chim.-Proj. & Peg.-Unb. & Peg.-Proj. & Zeph.-Unb. & Zeph.-Proj. \\
+    \midrule
+    MDKP & 5 & CoP & 1.37 & 1.34 & 1.26 & 1.26 & 1.09 & 1.38 & 1.48 & 1.25 & 1.19 & 1.39 \\
+     &  & Fea. & 0.27 & 0.26 & 0.26 & 0.26 & 0.16 & 0.27 & 0.23 & 0.26 & 0.22 & 0.26 \\
+    MDKP & 10 & CoP & 2.2 & 2.76 & 3.38 & 3.33 & 1.64 & 3.48 & 1.08 & 2.61 & 1.48 & 2.71 \\
+     &  & Fea. & 0.18 & 0.16 & 0.17 & 0.17 & 0.1 & 0.16 & 0.05 & 0.17 & 0.05 & 0.17 \\
+    MDKP & 15 & CoP & 6.55 & 16.38 & 16.38 & 9.83 & 1.64 & 13.11 & 0 & 11.47 & 0 & 11.47 \\
+     &  & Fea. & 0.23 & 0.24 & 0.23 & 0.24 & 0.15 & 0.25 & 0.07 & 0.23 & 0.05 & 0.25 \\
+    MDKP & 20 & CoP & 0 & 0 & 52.43 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+     &  & Fea. & 0.25 & 0.36 & 0.31 & 0.3 & 0.14 & 0.36 & 0.15 & 0.3 & 0.1 & 0.3 \\
+    \midrule
+    MIS & 8 & CoP & 13.08 & 11.64 & 11.51 & 12.53 & 12.61 & 12.03 & 13.08 & 11.8 & 13.08 & 12.86 \\
+     &  & Fea. & 0.3 & 0.28 & 0.27 & 0.29 & 0.29 & 0.28 & 0.3 & 0.28 & 0.3 & 0.29 \\
+    MIS & 12 & CoP & 39.32 & 30.72 & 32.15 & 30.92 & 37.07 & 29.08 & 39.32 & 25.6 & 39.32 & 37.27 \\
+     &  & Fea. & 0.17 & 0.15 & 0.15 & 0.16 & 0.16 & 0.15 & 0.17 & 0.15 & 0.17 & 0.17 \\
+    MIS & 16 & CoP & 337.51 & 127.8 & 219.55 & 216.27 & 327.68 & 147.46 & 301.47 & 190.05 & 321.13 & 242.48 \\
+     &  & Fea. & 0.13 & 0.11 & 0.11 & 0.14 & 0.12 & 0.11 & 0.13 & 0.12 & 0.13 & 0.14 \\
+    MIS & 20 & CoP & 1887.44 & 157.29 & 524.29 & 367 & 1887.44 & 419.43 & 2306.87 & 629.15 & 1782.58 & 419.43 \\
+     &  & Fea. & 0.14 & 0.08 & 0.09 & 0.1 & 0.12 & 0.08 & 0.13 & 0.09 & 0.13 & 0.1 \\
+    \bottomrule
+  \end{tabular}
+  }%
+\end{table}

@@ -1,0 +1,10 @@
+{
+  "base_seed": 1,
+  "cplex_reference_csv": "/Users/llee/Projects/blp-qubo/experiments/manifests/shared_eval_seed_manifest_cplex_optima.csv",
+  "instance_manifest": "/Users/llee/Projects/blp-qubo/experiments/manifests/shared_eval_seed_manifest.csv",
+  "num_instances": 20,
+  "sqa_schedule_id": "standard_t50",
+  "sqa_schedule_kind": "standard",
+  "sqa_schedule_total_time": 50.0,
+  "tuning_dir": "/Users/llee/Projects/blp-qubo/experiments/tunings"
+}
