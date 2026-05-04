@@ -1,0 +1,7 @@
+{
+  "base_seed": 1,
+  "num_instances": 20,
+  "projection_measure": "q2",
+  "projection_penalty_template": "heaviside",
+  "projection_selection_mode": "fixed"
+}

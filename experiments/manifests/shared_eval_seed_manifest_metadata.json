@@ -1,0 +1,5 @@
+{
+  "base_seed": 1,
+  "cplex_reference_csv": "/Users/llee/Projects/blp-qubo/experiments/manifests/shared_eval_seed_manifest_cplex_optima.csv",
+  "num_instances": 20
+}

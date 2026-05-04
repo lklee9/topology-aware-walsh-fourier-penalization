@@ -1,0 +1,15 @@
+.DS_Store
+/.codex/
+/.emacs.desktop
+/.emacs.desktop.lock
+/.agent-shell/
+/.venv/
+__pycache__/
+*.py[cod]
+.~/
+*~
+
+# Generated local outputs
+/artifacts/
+/experiments/plots/
+/plots/*_output/

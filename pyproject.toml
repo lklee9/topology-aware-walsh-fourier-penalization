@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blp-qubo"
+version = "0.1.0"
+description = "Research code for hardware-aware Walsh/Fourier QUBO projection"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+fourier = [
+  "numpy>=1.26",
+  "scipy>=1.13",
+]
+torch = [
+  "torch>=2.8",
+]
+experiments = [
+  "numpy>=1.26",
+  "scipy>=1.13",
+  "matplotlib>=3.10",
+  "networkx>=3.2",
+  "pandas>=2.2",
+  "tqdm>=4.67",
+  "docplex>=2.25",
+  "dimod>=0.12",
+]
+qpu = [
+  "numpy>=1.26",
+  "scipy>=1.13",
+  "dimod>=0.12",
+  "dwave-ocean-sdk>=9.3",
+  "amazon-braket-sdk>=1.114",
+  "azure-quantum>=1.2",
+]
+dev = [
+  "black>=26.3",
+  "flake8>=7.3",
+  "isort>=8.0",
+  "mypy>=1.18",
+  "pytest>=9.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["fourier_projection*"]
+
+[tool.black]
+line-length = 60
+
+[tool.isort]
+profile = "black"
+line_length = 60
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
